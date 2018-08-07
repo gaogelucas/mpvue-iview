@@ -1,8 +1,12 @@
 <template>
 <div>
-    <easy-alert title="您的手机因欠费已停机" desc="the number you dialed has out of service."></easy-alert>
-    <icon type="warn" size="40" class="weui-flex__item" />
     <easy-icon type="warning" size=28></easy-icon>
+
+    <easy-alert title="您的手机因欠费已停机" desc="the number you dialed has out of service."></easy-alert>
+
+    <easy-badge dot><icon type="warn" size="40" class="weui-flex__item" /></easy-badge>
+    
+    
     <i class="iconfont icon-error" ></i>
     <easy-panel title="easypanel"></easy-panel>
     <div class="quest-summary">
@@ -33,6 +37,7 @@ import EasyAvatar from "./EasyAvatar"
 import EasyPanel from "./EasyPanel"
 import EasyIcon from "./EasyIcon"
 import EasyAlert from "./EasyAlert"
+import EasyBadge from "./EasyBadge"
 
 export default {
     name: "EasyQuestionCard",
@@ -40,7 +45,8 @@ export default {
         EasyAvatar: EasyAvatar,
         EasyPanel: EasyPanel,
         EasyIcon: EasyIcon,
-        EasyAlert: EasyAlert
+        EasyAlert: EasyAlert,
+        EasyBadge: EasyBadge
     },
     data() {
         return {
