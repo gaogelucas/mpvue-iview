@@ -1,5 +1,5 @@
 <template>
-<div class="i-class i-avatar" :class="['i-avatar-'+shape, 'i-avatar-'+size, {'i-avatar-': src}]">
+<div class="i-class i-avatar" :class="['i-avatar-'+shape, 'i-avatar-'+size, {'i-avatar-image': src}]">
     <div v-if="src">
         <img :src="src">
     </div>
