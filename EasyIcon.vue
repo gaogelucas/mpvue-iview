@@ -5,37 +5,32 @@
 
 <script>
 export default {
-    name: "EasyIcon",
-    props: {
-        type: {
-            type: String,
-            default: 'success'
-        },
-        custom: {
-            type: String,
-            default: ''
-        },
-        size: {
-            type: Number,
-            default: 14
-        },
+  name: "EasyIcon",
+  props: {
+    type: {
+      type: String,
+      default: "success"
     },
-    data () {
-        return {
-
-        }
+    custom: {
+      type: String,
+      default: ""
     },
-    computed: {
-        iconType () {
-            return this.type ? "icon-"+this.type : ""
-        }
+    size: {
+      type: Number,
+      default: 24
     }
-
+  },
+  data() {
+    return {};
+  },
+  computed: {
+    iconType() {
+      return this.type ? "icon-" + this.type : "";
+    }
+  }
 };
 </script>
 
 <style scoped>
-
 /* 直接取在iconfont下载CSS，在App.vue中全局引入，注意要替换 .iconfont */
-
 </style>
